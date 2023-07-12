@@ -1,0 +1,16 @@
+spring:
+  output:
+    ansi:
+      enabled: always
+  batch:
+    job:
+      names: ${job.names:None}
+    jdbc:
+      initialize-schema: always
+  datasource:
+    driver-class-name: org.mariadb.jdbc.Driver
+    url: jdbc:mariadb://localhost:3306/waitdoc__prod?useUnicode=true&allowPublicKeyRetrieval=true&useSSL=false&characterEncoding=utf8&autoReconnect=true&serverTimezone=Asia/Seoul
+    username: root
+    password: root
+  jpa:
+    show_sql: true
