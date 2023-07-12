@@ -14,3 +14,7 @@ spring:
     password: root
   jpa:
     show_sql: true
+custom:
+  API:
+    url_1: https://apis.data.go.kr/B552657/HsptlAsembySearchService/getHsptlMdcncListInfoInqire
+    url_2: https://apis.data.go.kr/B552657/HsptlAsembySearchService/getHsptlBassInfoInqire
