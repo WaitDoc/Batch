@@ -60,7 +60,7 @@ public class HospitalApiDataConfig {
     public Step hospitalInitStep2(ItemReader hospitalReader,
                                       ItemProcessor hospitalItemProcessor,
                                       ItemWriter hospitalItemWriter){
-        return stepBuilderFactory.get("rebateOrderItemJobStep1")
+        return stepBuilderFactory.get("hospitalInitStep2")
                 .<Hospital, Department>chunk(1000)
                 .reader(hospitalReader)
                 .processor(hospitalItemProcessor)
